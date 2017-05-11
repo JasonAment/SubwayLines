@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        a {
+            box-sizing:border-box;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border: 10px solid #ff006e;
+            border-radius: 50%;
+            width: 100px;
+            overflow: hidden;
+        }
+
+        [aria-hidden="true"] {
+            visibility: hidden;
+        }
+
+        .line {
+            stroke-dasharray: 10;
+            animation: dash 20s reverse linear infinite;
+            stroke: #00ff21;
+            stroke-width: 10;
+        }
+        .sub .line {
+            stroke: #0094ff;
+        }
+        .curve{
+            position:relative;
+            top:-39px;
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 750;
+            }
+        }
+        .sub {
+            position:relative;
+            top:-25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <a href="javascript:void(42)"><img src="enroll.png" alt="Enroll" /></a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 2</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 2a</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 2b</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 3</a>
+    </div>
+    <div class="sub">
+        <a href="javascript:void(42)" tabindex="-1" aria-hidden="true"></a>
+        <a href="javascript:void(42)" tabindex="-1" aria-hidden="true"></a>
+        <a href="javascript:void(42)" tabindex="-1" aria-hidden="true"></a>
+        <svg class="curve" height="200" width="200">
+            <path class="line" d="M10 10 Q 100 10, 100 100 T 190 190" fill="transparent" />
+        </svg>
+
+        <a href="javascript:void(42)">Step 2</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 2a</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 2b</a>
+        <svg height="100" width="100">
+            <line class="line" x1="0" y1="50" x2="100" y2="50" />
+        </svg>
+        <a href="javascript:void(42)">Step 3</a>
+    </div>
+</body>
+</html>
